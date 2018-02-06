@@ -1,0 +1,20 @@
+.header {
+  background-color: #2f323a;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  height: 60px;
+  z-index: 999;
+  &__logo {
+    background: #1e2025;
+    padding: 10px;
+    width: 284px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    &__image {
+      width: 170px;
+    }
+  }
+}

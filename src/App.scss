@@ -1,0 +1,13 @@
+.app {
+  &__wrapper {
+    background: #f5f5fa;
+    display: flex;
+  }
+  &__content {
+    width: 100%;
+    padding: 50px;
+    padding-top: 115px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
