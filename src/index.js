@@ -3,7 +3,7 @@ import './index.scss';
 import App from './App';
 
 import ReactDOM from 'react-dom';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
 
 import registerServiceWorker from './registerServiceWorker';
 
@@ -14,8 +14,10 @@ ReactDOM.render(
   <BrowserRouter>
     <App>
        <Switch>
+
           <Route path='/analytics' component={Analytics} />
           <Route path='/news' component={News} />
+           <Redirect to="/news" exact />
        </Switch>
        </App>
     </BrowserRouter>, document.getElementById('root'));

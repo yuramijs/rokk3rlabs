@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Bar, Line, Doughnut} from 'react-chartjs-2';
-import _ from 'lodash';
-import moment from 'moment';
+import _ from 'lodash'; // TODO REMOVE GLOBAL LODASH AND USE LOCAL FUNCTIONS
+import moment from 'moment'; // TODO REMOVE LOCALES
 import activityData from './activity-data';
 
 import './Analytics.scss';
@@ -14,7 +14,7 @@ export default class Chart extends Component {
     this.time = activityData.map(({data}) => this.getHours(data.time));
     this.count = activityData.map(({data}) => data.count);
     this.speed = activityData.map(({data}) => data.speed);
-
+//TODO USE STATE !!!
     this.state = {
       chart: {
         datasets: [{
